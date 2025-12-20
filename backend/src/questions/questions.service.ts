@@ -1,6 +1,5 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { eq } from 'drizzle-orm';
-import * as schema from '../db/schema';
 import { questions } from '../db/schema';
 import { CreateQuestionDto } from './dto/create-question.dto';
 
@@ -10,6 +9,8 @@ export class QuestionsService {
 
   async createBulk(questionsData: CreateQuestionDto[]) {
     try {
+      console.log('Received data:', JSON.stringify(questionsData, null, 2));
+
       const result = await this.db
         .insert(questions)
         .values(questionsData)
@@ -20,8 +21,11 @@ export class QuestionsService {
         count: result.length,
         questions: result,
       };
-    } catch (error) {
-      throw new Error(`Failed to save questions: ${error.message}`);
+    } catch (error: any) {
+      console.error('Error in createBulk:', error);
+      throw new Error(
+        `Failed to save questions: ${error.message}. ${error.cause ? `Cause: ${error.cause.message}` : ''}`,
+      );
     }
   }
 

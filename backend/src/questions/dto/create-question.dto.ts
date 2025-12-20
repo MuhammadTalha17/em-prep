@@ -9,11 +9,11 @@ import {
 export class CreateQuestionDto {
   @IsString()
   @IsNotEmpty()
-  question_text: string;
+  questionText: string;
 
   @IsString()
   @IsNotEmpty()
-  question_type: string;
+  questionType: string;
 
   @IsArray()
   @IsNotEmpty()
@@ -21,7 +21,7 @@ export class CreateQuestionDto {
 
   @IsString()
   @IsNotEmpty()
-  correct_answer: string;
+  correctAnswer: string;
 
   @IsString()
   @IsNotEmpty()
@@ -29,7 +29,7 @@ export class CreateQuestionDto {
 
   @IsString()
   @IsNotEmpty()
-  plan_level: string;
+  planLevel: string;
 
   @IsString()
   @IsOptional()
@@ -37,9 +37,9 @@ export class CreateQuestionDto {
 
   @IsString()
   @IsOptional()
-  image_url?: string;
+  imageUrl?: string;
 
   @IsObject()
   @IsOptional()
-  raw_survey_json?: any;
+  rawSurveyJson?: any;
 }

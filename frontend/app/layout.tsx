@@ -8,6 +8,7 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import { theme } from "../theme";
+import { Providers } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,9 +43,11 @@ export default function RootLayout({
       <body
         className={`${gemunuLibre.variable} ${gemunuLibre.variable} antialiased`}
       >
-        <MantineProvider theme={theme} defaultColorScheme="light">
-          {children}
-        </MantineProvider>
+        <Providers>
+          <MantineProvider theme={theme} defaultColorScheme="light">
+            {children}
+          </MantineProvider>
+        </Providers>
       </body>
     </html>
   );

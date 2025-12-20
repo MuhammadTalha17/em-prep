@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SurveyCreatorComponent, SurveyCreator } from "survey-creator-react";
+import { Serializer } from "survey-core";
+import { uploadImage } from "@/lib/supabase";
 import "survey-core/survey-core.css";
 import "survey-creator-core/survey-creator-core.css";
-import { Serializer } from "survey-core";
 
 const creatorOptions = {
   showLogicTab: true,
@@ -15,10 +16,12 @@ const creatorOptions = {
 
 interface SurveyCreatoreWidgetProps {
   defaultLevel: string;
+  onCreatorReady?: (creator: SurveyCreator) => void;
 }
 
 export default function SurveyCreatoreWidget({
   defaultLevel,
+  onCreatorReady,
 }: SurveyCreatoreWidgetProps) {
   const [creator, setCreator] = useState<SurveyCreator | null>(null);
 
@@ -29,7 +32,7 @@ export default function SurveyCreatoreWidget({
   }, [defaultLevel]);
 
   useEffect(() => {
-    // 1. ADD CUSTOM PROPERTY: "Category"
+    // 1. ADDING CUSTOM PROPERTY: "Category"
     // This adds a new field to every question's property pane
     Serializer.addProperty("question", {
       name: "category",
@@ -53,37 +56,68 @@ export default function SurveyCreatoreWidget({
         category: "general",
         displayName: "Plan Level",
         choices: [
-          { value: "primary", text: "Primary" },
           { value: "intermediate", text: "Intermediate" },
-          { value: "advanced", text: "Advanced" },
+          { value: "primary", text: "Primary" },
         ],
       });
     }
 
+    //3. Image upload property
+    Serializer.addProperty("question", {
+      name: "imageLink",
+      type: "file",
+      category: "general",
+      displayName: "Question Image",
+    });
+
     const newCreator = new SurveyCreator(creatorOptions);
+
+    newCreator.onUploadFile.add(async (_, options) => {
+      const { files, callback } = options;
+      try {
+        const file = files[0];
+        if (!file) return;
+        console.log("Uploading file...", file.name);
+
+        // Upload to Supabase
+        const url = await uploadImage(file);
+        console.log("Upload success:", url);
+        // Pass URL back to SurveyJS
+        callback("success", url);
+      } catch (error) {
+        console.error("Upload failed:", error);
+        callback("error");
+      }
+    });
 
     newCreator.onQuestionAdded.add((sender, options) => {
       const currentLevel = levelRef.current;
 
-      // Try both methods for safety
+      //both methods for safety
       options.question.plan_level = currentLevel;
       options.question.setPropertyValue("plan_level", currentLevel);
     });
 
     // Save Event Hook
     newCreator.saveSurveyFunc = (saveNo: any, callback: any) => {
-      console.log("Saving Survey JSON:", JSON.stringify(newCreator.JSON));
+      //console.log("Saving Survey JSON:", JSON.stringify(newCreator.JSON));
       callback(saveNo, true);
     };
     setCreator(newCreator);
-  }, []);
 
-  if (!creator)
+    //callback
+    if (onCreatorReady) {
+      onCreatorReady(newCreator);
+    }
+  }, [onCreatorReady]);
+
+  if (!creator) {
     return <div className="p-4 text-gray-500">Loading Editor...</div>;
+  }
 
   return (
     <div className="h-[calc(100vh-200px)] w-full bg-white shadow-sm border border-gray-200 rounded-lg overflow-hidden">
-      <SurveyCreatorComponent creator={creator} />
+      {creator && <SurveyCreatorComponent creator={creator} />}
     </div>
   );
 }
