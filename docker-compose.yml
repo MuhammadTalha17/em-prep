@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    image: muhammadt17/em-prep-backend:latest
+    ports:
+      - "4000:4000"
+    env_file:
+      - backend.env
+    restart: unless-stopped
+
+  frontend:
+    image: muhammadt17/em-prep-frontend:latest
+    ports:
+      - "3000:3000"
+    env_file:
+      - frontend.env
+    depends_on:
+      - backend
+    restart: unless-stopped
