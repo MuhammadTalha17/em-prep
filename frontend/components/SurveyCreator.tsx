@@ -10,8 +10,6 @@ import "survey-creator-core/survey-creator-core.css";
 const creatorOptions = {
   showLogicTab: true,
   isAutoSave: true,
-  // simplified UI for admins
-  //showJSONEditorTab: false,
 };
 
 interface SurveyCreatoreWidgetProps {
@@ -41,10 +39,33 @@ export default function SurveyCreatoreWidget({
       displayName: "Question Category",
       choices: [
         "Cardiology",
-        "Trauma",
+        "MajorTrauma",
+        "MinorTrauma",
         "Pediatrics",
         "Toxicology",
         "Resuscitation",
+        "Eye",
+        "ENT",
+        "ObstetricAndGynaecology",
+        "PainAndSedation",
+        "Nephrology",
+        "Neurology",
+        "Gastroenterology",
+        "EnvironmentalEmergencies",
+        "ElderlyCare",
+        "Dermatology",
+        "Allergy",
+        "OncologicalEmergencies",
+        "Musculoskeletal",
+        "Respiratory",
+        "SurgicalEmergencies",
+        "Urology",
+        "Vascular",
+        "Endocrinology",
+        "Haemotology",
+        "InfectiousDiseases",
+        "ProceduralSkills",
+        "ComplexOrChallengingSituations",
       ],
     });
 
@@ -70,6 +91,14 @@ export default function SurveyCreatoreWidget({
       displayName: "Question Image",
     });
 
+    //4. Explanation Image upload property
+    Serializer.addProperty("question", {
+      name: "explanationImageLink",
+      type: "file",
+      category: "general",
+      displayName: "Explanation Image",
+    });
+
     const newCreator = new SurveyCreator(creatorOptions);
 
     newCreator.onUploadFile.add(async (_, options) => {
@@ -77,7 +106,7 @@ export default function SurveyCreatoreWidget({
       try {
         const file = files[0];
         if (!file) return;
-        console.log("Uploading file...", file.name);
+        // console.log("Uploading file...", file.name);
 
         // Upload to Supabase
         const url = await uploadImage(file);
@@ -85,7 +114,7 @@ export default function SurveyCreatoreWidget({
         // Pass URL back to SurveyJS
         callback("success", url);
       } catch (error) {
-        console.error("Upload failed:", error);
+        //console.error("Upload failed:", error);
         callback("error");
       }
     });

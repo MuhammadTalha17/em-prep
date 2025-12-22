@@ -88,6 +88,7 @@ export default function AdminDashboard() {
       planLevel: q.plan_level || activeModule,
       explanation: q.description || null,
       imageUrl: q.imageLink || null,
+      explanationImageUrl: q.explanationImageLink || null,
       rawSurveyJson: q,
     }));
 

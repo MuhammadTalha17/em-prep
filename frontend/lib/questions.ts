@@ -9,6 +9,7 @@ export interface CreateQuestionDto {
   planLevel: string;
   explanation?: string;
   imageUrl?: string;
+  explanationImageUrl?: string;
   rawSurveyJson?: any;
 }
 

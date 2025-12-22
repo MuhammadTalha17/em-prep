@@ -17,6 +17,7 @@ export const questions = pgTable('questions', {
   planLevel: varchar('plan_level', { length: 50 }).notNull(),
   explanation: text('explanation'),
   imageUrl: text('image_url'),
+  explanationImageUrl: text('explanation_image_url'),
   rawSurveyJson: jsonb('raw_survey_json'),
   createdAt: timestamp('created_at', { withTimezone: true }).defaultNow(),
   updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow(),

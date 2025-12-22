@@ -39,6 +39,10 @@ export class CreateQuestionDto {
   @IsOptional()
   imageUrl?: string;
 
+  @IsString()
+  @IsOptional()
+  explanationImageUrl?: string;
+
   @IsObject()
   @IsOptional()
   rawSurveyJson?: any;
