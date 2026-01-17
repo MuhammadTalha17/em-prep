@@ -19,6 +19,9 @@ export default function Home() {
           <Link href="/admin">
             <AppButton appVariant="admin">Admin</AppButton>
           </Link>
+          <Link href="/user">
+            <AppButton appVariant="user">User</AppButton>
+          </Link>
         </div>
       </main>
     </div>
