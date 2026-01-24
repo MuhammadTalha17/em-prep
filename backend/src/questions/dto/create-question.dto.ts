@@ -1,9 +1,9 @@
 import {
   IsString,
   IsNotEmpty,
-  IsArray,
   IsOptional,
   IsObject,
+  Matches,
 } from 'class-validator';
 
 export class CreateQuestionDto {
@@ -11,16 +11,13 @@ export class CreateQuestionDto {
   @IsNotEmpty()
   questionText: string;
 
-  @IsString()
+  @IsObject()
   @IsNotEmpty()
-  questionType: string;
-
-  @IsArray()
-  @IsNotEmpty()
-  choices: any[];
+  choices: Record<string, string>;
 
   @IsString()
   @IsNotEmpty()
+  @Matches(/^[A-E]$/, { message: 'Correct answer must be A, B, C, D, or E' })
   correctAnswer: string;
 
   @IsString()

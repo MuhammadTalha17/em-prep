@@ -1,0 +1,193 @@
+[
+  {
+    "question_text": "A 50-year-old woman is brought in by emergency medical services on a backboard after a motor vehicle collision (MVC), complaining of shortness of breath. She has decreased breath sounds on the right side of the chest. A chest tube is placed, with a return of 200 mL of blood in the first hour, 200 mL in the second hour, and 350 mL in the third hour. What is the next step in the management of this patient?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Check coagulation profile",
+      "B": "Conservative management and transfusion as needed",
+      "C": "Emergency thoracotomy",
+      "D": "External fixation of rib fractures",
+      "E": "Insertion of a second thoracostomy tube"
+    },
+    "correct_answer": "C",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "An 84-year-old man is brought by ambulance having collapsed at home. The ambulance crew report ‘coffee ground’ vomit in a bowl by his chair at home. He has hypertension and osteoarthritis. You are concerned about upper gastrointestinal bleeding and have just placed a large bore cannula His observations are as follows: Temperature 37.2 degrees Heart rate 102 beats per minute Blood pressure 108/64 Respiratory rate18 breaths per minute Oxygen saturation 96% on room air Which of the following is the most appropriate next management step?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Intravenous lansoprazole",
+      "B": "Intravenous tranexamic acid",
+      "C": "intravenous terlipressin",
+      "D": "Request a group and crossmatch",
+      "E": "Start a normal saline infusion"
+    },
+    "correct_answer": "D",
+    "category": "Gastroenterology",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 10-year-old boy is brought to the Emergency Department with a three-hour history of lower abdominal pain and an acutely painful left testicle. There is no history of trauma. What is the most appropriate next step after examination?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Dipstick urinalysis",
+      "B": "Doppler ultrasound of the testes",
+      "C": "Discharge with a scrotal support",
+      "D": "Refer for consideration of urgent scrotal exploration",
+      "E": "De-rotation by external rotation"
+    },
+    "correct_answer": "D",
+    "category": "SurgicalEmergencies",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "When a patient presents to the emergency department (ED) complaining of a sore throat, which is the most valuable component of the diagnostic evaluation?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Computed tomography (CT) evaluation of the soft",
+      "B": "Direct visualization of the oropharynx",
+      "C": "Plain film radiography",
+      "D": "Serologic testing"
+    },
+    "correct_answer": "B",
+    "category": "Endocrinology",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 65-year-old man with a past medical history of prostate cancer presents with chest pain. His blood pressure is 60/40 mm Hg, and his pulse is 145 beats/min. The ECG shows diffuse ST segment elevation, and cardiomegaly is seen on his chest radiograph. What is the most appropriate first step in the management of this patient?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Administration of dobutamine",
+      "B": "Administration of dopamine",
+      "C": "Cardiac catheterization",
+      "D": "Transthoracic Echo",
+      "E": "Thrombolysis"
+    },
+    "correct_answer": "D",
+    "category": "Cardiology",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 27-year-old man presents after a motor vehicle collision (MVC) with a severe closed head trauma. On examination, you calculate a Glasgow Coma Scale (GCS) score of 5 and a left dilated pupil, with a sluggish pupillary reflex compared with the right. What other finding will your examination likely reveal?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Left carotid bruit",
+      "B": "Left foot weakness",
+      "C": "Loss of controlled pain/temperature sensation",
+      "D": "Right carotid bruit",
+      "E": "Right-sided hemiparesis"
+    },
+    "correct_answer": "E",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "Which of the following is the most sensitive electrocardiogram (ECG) manifestation of myocardial contusion?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Biphasic T wave",
+      "B": "Left bundle branch block",
+      "C": "Right bundle branch block",
+      "D": "Sinus tachycardia",
+      "E": "Transient ST segment elevation"
+    },
+    "correct_answer": "D",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 30-year-old woman presents intubated by emergency medical services on a backboard with C spine immobilization. She was found unresponsive and hypotensive after a front-end collision. She was the driver of the vehicle and unbelted. Despite fluid resuscitation, the patient continues to be tachycardic and hypotensive. On physical examination, you note jugular venous distention (JVD) and a harsh murmur that sounds like a splashing mill wheel. An electrocardiogram (ECG) reveals electrical alternans. Which of the following statements is true regarding the patient’s underlying problem?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Echocardiogram will reveal diastolic collapse of the",
+      "B": "Focused assessment with sonography in trauma",
+      "C": "Patchy consolidation will be seen on chest radiograph.",
+      "D": "Pericardiocentesis is not indicated.",
+      "E": "She will have a negative focused abdominal sonogram"
+    },
+    "correct_answer": "A",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 5-year-old child is brought in by his mother complaining of sore skin on his face. He has a history of eczema, and over the last couple of days, the right side of his face has become almost entirely covered with small blisters. His mother also reports that he has had a temperature of 38.6°C. When you examine him, you note marked cervical lymphadenopathy. While talking to his mother, you noticed a crusting lesion to the left side of her mouth. What is the SINGLE most likely diagnosis?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Eczema herpeticum",
+      "B": "Shingles",
+      "C": "Dermatitis herpetiformis",
+      "D": "Impetigo",
+      "E": "Cellulitis"
+    },
+    "correct_answer": "A",
+    "category": "Dermatology",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 33-year-old woman is presented to the ED with sudden onset of shortness of breath whilst shopping in the supermarket. She has no other symptoms but had a laparotomy and removal of uterine fibroids 3 weeks ago. She has no other Past medical history and is a non-smoker. Her observations are: Respiratory rate 26 breath/min, Sp02 94% on air, Heart rate 95bpm. Her examination is unremarkable. There is no swelling or tenderness in her lower legs. What is the correct Wells score for this patient?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "9",
+      "B": "1.5",
+      "C": "3",
+      "D": "4.5",
+      "E": "1.0"
+    },
+    "correct_answer": "D",
+    "category": "Vascular",
+    "explanation": "Wells Criteria\nH : Haemoptysis\nI : Immobilization\nM : Malignancy\nD : DVT\nE : Embolism more likely\nP : Previous VTE\nS : Surgery\nT : Tachycardia\nPatients scoring ≤ 4 or less are low risk (or PE unlikely)\nPatients scoring > 4 are high risk (or PE likely)",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A concerned grandmother has brought her five-year-old grandson to the ED with a number of bruises. She says that she has noticed bruises over the past month which come and go, although the child seems completely well. Today he grazed his knee in a fall and she was worried that the bleeding did not stop as quickly as she would expect. What is the most likely explanation?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Viral-induced capillary fragility",
+      "B": "Immune (Idiopathic) thrombocytopenic purpura",
+      "C": "Non-accidental injury",
+      "D": "Acute leukaemia",
+      "E": "Henoch-Schonlein purpura"
+    },
+    "correct_answer": "B",
+    "category": "Pediatrics",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 74-year-old woman presents having suffered 4 ‘fainting episodes’ over the past 24 hours. Each episode was sudden and unexpected. Her examination is unremarkable. A copy of her rhythm strip is shown below: What is the SINGLE most likely diagnosis?",
+    "question_type": "radiogroup",
+    "choices": {
+      "A": "Wenckebach block",
+      "B": "Complete heart block",
+      "C": "Atrial fibrillation",
+      "D": "Sick sinus syndrome",
+      "E": "Mobitz type 2 AV block"
+    },
+    "correct_answer": "B",
+    "category": "Cardiology",
+    "explanation": "",
+    "image_url": "extracted_images/page_24.png",
+    "explanation_image_url": null
+  }
+]
