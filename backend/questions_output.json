@@ -1,13 +1,177 @@
 [
   {
-    "question_text": "A 50-year-old woman is brought in by emergency medical services on a backboard after a motor vehicle collision (MVC), complaining of shortness of breath. She has decreased breath sounds on the right side of the chest. A chest tube is placed, with a return of 200 mL of blood in the first hour, 200 mL in the second hour, and 350 mL in the third hour. What is the next step in the management of this patient?",
-    "question_type": "radiogroup",
+    "question_text": "A 62-year-old man presents with septic shock secondary to pneumonia. He is tachypnoeic with RR 36, SpO₂ 86% despite 15 L O₂ via non-rebreather, BP 80/50, and drowsy with GCS 10. You decide to proceed with rapid sequence intubation. Which is the MOST appropriate induction agent?",
     "choices": {
-      "A": "Check coagulation profile",
-      "B": "Conservative management and transfusion as needed",
-      "C": "Emergency thoracotomy",
-      "D": "External fixation of rib fractures",
-      "E": "Insertion of a second thoracostomy tube"
+      "A": "Propofol",
+      "B": "Thiopentone",
+      "C": "Ketamine",
+      "D": "Midazolam",
+      "E": "Fentanyl"
+    },
+    "correct_answer": "C",
+    "category": "Resuscitation",
+    "explanation": "Propofol and thiopentone → significant vasodilation → worsen hypotension.\nMidazolam → unpredictable hypotension.\nFentanyl → analgesic, not induction agent alone.\nKetamine maintains sympathetic tone and supports BP — ideal in septic shock.",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "During RSI, you fail intubation on first attempt. SpO₂ drops to 88%. You attempt bag-mask ventilation but chest rise is poor. You reposition the head and apply two-person technique. SpO₂ continues to fall to 82%. What is the next best step?",
+    "choices": {
+      "A": "Immediate surgical cricothyroidotomy",
+      "B": "Attempt intubation again with bougie",
+      "C": "Insert supraglottic airway device",
+      "D": "Wake the patient up",
+      "E": "Administer more muscle relaxant"
+    },
+    "correct_answer": "C",
+    "category": "Resuscitation",
+    "explanation": "DAS Plan B after failed intubation = Insert 2nd generation supraglottic airway (e.g., i-gel).",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A trauma patient with facial burns and soot in the mouth is speaking in full sentences but has hoarseness. Oxygen saturations are 98% on high flow oxygen. What is the most appropriate management?",
+    "choices": {
+      "A": "Observe and repeat ABG in 1 hour",
+      "B": "Nebulised adrenaline",
+      "C": "Immediate RSI and intubation",
+      "D": "High-flow nasal oxygen and CT scan",
+      "E": "Non-invasive ventilation"
+    },
+    "correct_answer": "C",
+    "category": "Resuscitation",
+    "explanation": "Airway oedema can rapidly progress → difficult or impossible intubation later.\nIf you think the airway may be lost, secure it early\nRe",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 45-year-old obese man requires RSI. On laryngoscopy, only epiglottis is visible. What Cormack-Lehane grade is this?",
+    "choices": {
+      "A": "Grade 1",
+      "B": "Grade 2a",
+      "C": "Grade 2b",
+      "D": "Grade 3",
+      "E": "Grade 4"
+    },
+    "correct_answer": "D",
+    "category": "Resuscitation",
+    "explanation": "Grade 1 → Full cords visible\nGrade 2 → Partial cords visible\nGrade 3 → Only epiglottis visible\nGrade 4 → Neither cords nor epiglottis visible",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 28-year-old man is brought to the ED after a high-speed road traffic collision. He was the unrestrained driver. On arrival he is agitated, combative, and smells of alcohol. Primary survey: Airway: shouting incoherently Breathing: RR 32, SpO₂ 92% on 15 L O₂ Circulation: HR 132, BP 95/60 Disability: GCS 11 (E3 V3 M5) Exposure: obvious chest wall bruising He suddenly becomes more drowsy (GCS drops to 8), with gurgling sounds and reduced respiratory effort. You decide to perform RSI. You give ketamine and rocuronium. Intubation is successful on first attempt. Within 2 minutes, his BP drops to 65/40 mmHg and SpO₂ falls to 85%. Ventilator shows rapidly rising peak pressures. Trachea appears central. There is reduced air entry on the right side. What is the MOST likely diagnosis?",
+    "choices": {
+      "A": "Anaesthetic-induced vasodilation",
+      "B": "Hypovolaemic shock",
+      "C": "Dynamic hyperinflation",
+      "D": "Tension pneumothorax",
+      "E": "Mainstem intubation"
+    },
+    "correct_answer": "D",
+    "category": "MajorTrauma",
+    "explanation": "Positive pressure ventilation can convert a simple pneumothorax into tension pneumothorax.\nSudden deterioration after intubation in trauma = treat as tension pneumothorax until proven otherwise.",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 64-year-old woman presents with severe community-acquired pneumonia. She is obese (BMI 38) and has type 2 diabetes. Observations: RR 38 SpO₂ 84% on 15 L O₂ BP 88/54 HR 120 GCS 13 You prepare for RSI. Pre-oxygenation is attempted with non-rebreather mask for 3 minutes, but SpO₂ only reaches 90%. You proceed with induction. After paralysis, oxygen saturations fall rapidly from 90% to 70% within 45 seconds. What is the MOST appropriate strategy that should have been used to prolong safe apnoea time?",
+    "choices": {
+      "A": "Bag-mask ventilation after induction",
+      "B": "Head-down positioning",
+      "C": "Apnoeic oxygenation via nasal cannula",
+      "D": "Cricoid pressure",
+      "E": "Lower induction dose"
+    },
+    "correct_answer": "C",
+    "category": "Resuscitation",
+    "explanation": "Apnoeic oxygenation (nasal cannula at 15 L/min during RSI) prolongs safe apnoea time. especially in those who have\nhigh risk of desaturation due to low FRC like obese pateints",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 35-year-old man is brought after assault. He is intubated pre-hospital for GCS 6. On arrival: BP 85/50 HR 120 ETCO₂ 4.0 kPa SpO₂ 99% CT image is shown below What is the MOST important immediate management priority?",
+    "choices": {
+      "A": "Mannitol administration",
+      "B": "Hyperventilation to ETCO₂ 3.0 kPa",
+      "C": "Increase mean arterial pressure",
+      "D": "Urgent neurosurgical referral",
+      "E": "Start sedation infusion"
+    },
+    "correct_answer": "C",
+    "category": "MajorTrauma",
+    "explanation": "If BP is low → brain ischemia worsens.\nBefore mannitol, before hyperventilation: → Restore BP with blood products ± vasopressors.",
+    "image_url": "extracted_images/page_20.png",
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 40-year-old man involved in a high-speed RTC presents with: RR 34 SpO₂ 88% HR 130 BP 100/65 Exam shows paradoxical chest wall movement over left lateral chest. Air entry reduced but present. Trachea central. ABG shows: pH: 7.25 PaCO2: 60 PO2: 8.0 Bicarb: 24 Base excess: -2 to 0 What is the MOST appropriate management?",
+    "choices": {
+      "A": "Immediate needle thoracostomy",
+      "B": "Emergency thoracotomy",
+      "C": "Intubation and positive pressure ventilation",
+      "D": "Intercostal chest drain",
+      "E": "Analgesia only"
+    },
+    "correct_answer": "C",
+    "category": "MajorTrauma",
+    "explanation": "Paradoxical movement = flail chest.\nRespiratory failure due to:\nPulmonary contusion\nIneffective ventilation\nManagement in severe cases: → Intubation + PPV (internal splinting)",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 32-year-old man is brought to the ED after a high-speed road traffic collision. He was the driver and required extrication. On arrival: RR 34 SpO₂ 89% on 15 L O₂ HR 132 BP 92/60 GCS 15 Examination reveals extensive bruising over the right chest wall. Breath sounds are reduced on the right side. The trachea appears midline and there is no neck vein distension. A chest X-ray is shown below What is the most appropriate next step in management?",
+    "choices": {
+      "A": "Immediate thoracotomy",
+      "B": "Needle thoracostomy",
+      "C": "Insert large-bore chest drain",
+      "D": "CT trauma scan",
+      "E": "Positive pressure ventilation"
+    },
+    "correct_answer": "",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": "extracted_images/page_27.png",
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A frail elderly woman received a haematoma block (15 mL of 2% lignocaine) for Colles' fracture reduction. Ten minutes post-procedure, she develops tachypnoea, cyanosis, and drowsiness. Vitals: HR 130 bpm, BP 105/83 mmHg, SpO₂ 86% on face mask oxygen. What is the most likely cause?",
+    "choices": {
+      "A": "Laryngeal spasm",
+      "B": "Polymorphic ventricular tachycardia",
+      "C": "Monomorphic ventricular tachycardia",
+      "D": "Methaemoglobinaemia",
+      "E": "Respiratory depression"
+    },
+    "correct_answer": "D",
+    "category": "Toxicology",
+    "explanation": "Cyanosis + low SpO₂ despite oxygen after local anaesthetic → Methaemoglobinaemia",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 45-year-old pedestrian is brought to the resuscitation room after being struck by a van. He has severe lower abdominal and pelvic pain. His heart rate is 135 bpm, and his blood pressure is 75/40 mmHg. You suspect a significant pelvic fracture. Which of the following is the most appropriate initial step in the management of this patient's suspected pelvic injury?",
+    "choices": {
+      "A": "Perform a log-roll immediately to inspect the posterior pelvis and spine.",
+      "B": "Administer a 2-litre crystalloid fluid bolus before applying a splint.",
+      "C": "Transfer the patient immediately for a whole-body CT scan to confirm the fracture pattern.",
+      "D": "Splint the pelvis early and avoid excessive movement.",
+      "E": "Prepare the patient for an immediate resuscitative thoracotomy."
+    },
+    "correct_answer": "D",
+    "category": "MajorTrauma",
+    "explanation": "",
+    "image_url": null,
+    "explanation_image_url": null
+  },
+  {
+    "question_text": "A 28-year-old male is brought into the Emergency Department after a high-speed motorcycle collision. Upon arrival, he has no palpable pulses and no signs of life, confirming a traumatic cardiac arrest. The trauma team prepares to initiate resuscitation. During Traumatic Cardiac Arrest in Adults, which of the following interventions should be delayed during the initial phases of his resuscitation compared to a standard \"medical\" cardiac arrest?",
+    "choices": {
+      "A": "Performing bilateral thoracostomies",
+      "B": "Applying a pelvic binder",
+      "C": "Administering continuous external chest compressions",
+      "D": "Rapid blood and blood product transfusion",
+      "E": "Securing adequate oxygenation and ventilation"
     },
     "correct_answer": "C",
     "category": "MajorTrauma",
@@ -16,178 +180,63 @@
     "explanation_image_url": null
   },
   {
-    "question_text": "An 84-year-old man is brought by ambulance having collapsed at home. The ambulance crew report ‘coffee ground’ vomit in a bowl by his chair at home. He has hypertension and osteoarthritis. You are concerned about upper gastrointestinal bleeding and have just placed a large bore cannula His observations are as follows: Temperature 37.2 degrees Heart rate 102 beats per minute Blood pressure 108/64 Respiratory rate18 breaths per minute Oxygen saturation 96% on room air Which of the following is the most appropriate next management step?",
-    "question_type": "radiogroup",
+    "question_text": "A patient taking warfarin presents with an INR of 6.2 and minor bleeding from a recent dental extraction site. According to the provided management guidelines, what is the most appropriate course of action?",
     "choices": {
-      "A": "Intravenous lansoprazole",
-      "B": "Intravenous tranexamic acid",
-      "C": "intravenous terlipressin",
-      "D": "Request a group and crossmatch",
-      "E": "Start a normal saline infusion"
+      "A": "Stop warfarin and observe without Vitamin K",
+      "B": "Stop warfarin and give Vitamin K orally",
+      "C": "Stop warfarin and administer Prothrombin Complex Concentrate (PCC)",
+      "D": "Stop warfarin and give Vitamin K intravenously",
+      "E": "Observe"
     },
     "correct_answer": "D",
-    "category": "Gastroenterology",
-    "explanation": "",
+    "category": "Toxicology",
+    "explanation": "For an INR between 5.0 and 8.0 with minor bleeding, the recommendation is to withhold the anticoagulant and\nadminister Vitamin K via the IV route.",
     "image_url": null,
     "explanation_image_url": null
   },
   {
-    "question_text": "A 10-year-old boy is brought to the Emergency Department with a three-hour history of lower abdominal pain and an acutely painful left testicle. There is no history of trauma. What is the most appropriate next step after examination?",
-    "question_type": "radiogroup",
+    "question_text": "A 24-year-old woman presents to the Emergency Department stating she has taken 20 paracetamol tablets, 500 mg each, over a 4-hour period, finishing her last tablet 2 hours ago. She weighs 60 kg She is currently asymptomatic. What is the most appropriate initial management step for this patient?",
     "choices": {
-      "A": "Dipstick urinalysis",
-      "B": "Doppler ultrasound of the testes",
-      "C": "Discharge with a scrotal support",
-      "D": "Refer for consideration of urgent scrotal exploration",
-      "E": "De-rotation by external rotation"
-    },
-    "correct_answer": "D",
-    "category": "SurgicalEmergencies",
-    "explanation": "",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "When a patient presents to the emergency department (ED) complaining of a sore throat, which is the most valuable component of the diagnostic evaluation?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Computed tomography (CT) evaluation of the soft",
-      "B": "Direct visualization of the oropharynx",
-      "C": "Plain film radiography",
-      "D": "Serologic testing"
+      "A": "Await her paracetamol levels at 4 hours post-first ingestion and plot them on the treatment graph.",
+      "B": "Commence intravenous acetylcysteine immediately.",
+      "C": "Discharge with advice, as the total dose is less than 150 mg/kg.",
+      "D": "Administer activated charcoal and observe for 12 hours.",
+      "E": "Check liver function tests and INR, starting acetylcysteine only if they are abnormal."
     },
     "correct_answer": "B",
-    "category": "Endocrinology",
-    "explanation": "",
+    "category": "Toxicology",
+    "explanation": "This is staggered overdose in which acetylcystiene should be started immediately if patient have taken >75mg/kg of\nparacetamol. Paracetamol treatment graph is not used in staggered overdose",
     "image_url": null,
     "explanation_image_url": null
   },
   {
-    "question_text": "A 65-year-old man with a past medical history of prostate cancer presents with chest pain. His blood pressure is 60/40 mm Hg, and his pulse is 145 beats/min. The ECG shows diffuse ST segment elevation, and cardiomegaly is seen on his chest radiograph. What is the most appropriate first step in the management of this patient?",
-    "question_type": "radiogroup",
+    "question_text": "A 35-year-old man is brought to the resuscitation room after being found unresponsive at home with empty packets of amitriptyline. On examination, he is comatose with a Glasgow Coma Score of 6 (E1 V1 M4), his pupils are dilated, and he has very dry skin. His heart rate is 130 bpm, and his blood pressure is 85/50 mmHg. An ECG demonstrates a broad complex tachycardia with a QRS duration of 160 ms and right axis deviation. What is the most appropriate specific pharmacological intervention to manage the cardiovascular toxicity in this patient?",
     "choices": {
-      "A": "Administration of dobutamine",
-      "B": "Administration of dopamine",
-      "C": "Cardiac catheterization",
-      "D": "Transthoracic Echo",
-      "E": "Thrombolysis"
+      "A": "Intravenous amiodarone",
+      "B": "Intravenous flumazenil",
+      "C": "Intravenous sodium bicarbonate",
+      "D": "Intravenous lipid emulsion (Intralipid)",
+      "E": "Intravenous glucagon"
     },
-    "correct_answer": "D",
-    "category": "Cardiology",
-    "explanation": "",
+    "correct_answer": "C",
+    "category": "Toxicology",
+    "explanation": "The specific treatment for TCA-induced ventricular conduction abnormalities is intravenous sodium bicarbonate",
     "image_url": null,
     "explanation_image_url": null
   },
   {
-    "question_text": "A 27-year-old man presents after a motor vehicle collision (MVC) with a severe closed head trauma. On examination, you calculate a Glasgow Coma Scale (GCS) score of 5 and a left dilated pupil, with a sluggish pupillary reflex compared with the right. What other finding will your examination likely reveal?",
-    "question_type": "radiogroup",
+    "question_text": "A 35-year-old man is brought to the resuscitation room after being found unresponsive at home with empty packets of amitriptyline. On examination, he is comatose with a Glasgow Coma Score of 6 (E1 V1 M4), his pupils are dilated, and he has very dry skin. His heart rate is 130 bpm, and his blood pressure is 85/50 mmHg. An ECG demonstrates a broad complex tachycardia with a QRS duration of 160 ms and right axis deviation. What is the most appropriate specific pharmacological intervention to manage the cardiovascular toxicity in this patient?",
     "choices": {
-      "A": "Left carotid bruit",
-      "B": "Left foot weakness",
-      "C": "Loss of controlled pain/temperature sensation",
-      "D": "Right carotid bruit",
-      "E": "Right-sided hemiparesis"
+      "A": "Intravenous amiodarone",
+      "B": "Intravenous flumazenil",
+      "C": "Intravenous sodium bicarbonate",
+      "D": "Intravenous lipid emulsion (Intralipid)",
+      "E": "Intravenous glucagon"
     },
-    "correct_answer": "E",
-    "category": "MajorTrauma",
+    "correct_answer": "",
+    "category": "Toxicology",
     "explanation": "",
     "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "Which of the following is the most sensitive electrocardiogram (ECG) manifestation of myocardial contusion?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Biphasic T wave",
-      "B": "Left bundle branch block",
-      "C": "Right bundle branch block",
-      "D": "Sinus tachycardia",
-      "E": "Transient ST segment elevation"
-    },
-    "correct_answer": "D",
-    "category": "MajorTrauma",
-    "explanation": "",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "A 30-year-old woman presents intubated by emergency medical services on a backboard with C spine immobilization. She was found unresponsive and hypotensive after a front-end collision. She was the driver of the vehicle and unbelted. Despite fluid resuscitation, the patient continues to be tachycardic and hypotensive. On physical examination, you note jugular venous distention (JVD) and a harsh murmur that sounds like a splashing mill wheel. An electrocardiogram (ECG) reveals electrical alternans. Which of the following statements is true regarding the patient’s underlying problem?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Echocardiogram will reveal diastolic collapse of the",
-      "B": "Focused assessment with sonography in trauma",
-      "C": "Patchy consolidation will be seen on chest radiograph.",
-      "D": "Pericardiocentesis is not indicated.",
-      "E": "She will have a negative focused abdominal sonogram"
-    },
-    "correct_answer": "A",
-    "category": "MajorTrauma",
-    "explanation": "",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "A 5-year-old child is brought in by his mother complaining of sore skin on his face. He has a history of eczema, and over the last couple of days, the right side of his face has become almost entirely covered with small blisters. His mother also reports that he has had a temperature of 38.6°C. When you examine him, you note marked cervical lymphadenopathy. While talking to his mother, you noticed a crusting lesion to the left side of her mouth. What is the SINGLE most likely diagnosis?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Eczema herpeticum",
-      "B": "Shingles",
-      "C": "Dermatitis herpetiformis",
-      "D": "Impetigo",
-      "E": "Cellulitis"
-    },
-    "correct_answer": "A",
-    "category": "Dermatology",
-    "explanation": "",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "A 33-year-old woman is presented to the ED with sudden onset of shortness of breath whilst shopping in the supermarket. She has no other symptoms but had a laparotomy and removal of uterine fibroids 3 weeks ago. She has no other Past medical history and is a non-smoker. Her observations are: Respiratory rate 26 breath/min, Sp02 94% on air, Heart rate 95bpm. Her examination is unremarkable. There is no swelling or tenderness in her lower legs. What is the correct Wells score for this patient?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "9",
-      "B": "1.5",
-      "C": "3",
-      "D": "4.5",
-      "E": "1.0"
-    },
-    "correct_answer": "D",
-    "category": "Vascular",
-    "explanation": "Wells Criteria\nH : Haemoptysis\nI : Immobilization\nM : Malignancy\nD : DVT\nE : Embolism more likely\nP : Previous VTE\nS : Surgery\nT : Tachycardia\nPatients scoring ≤ 4 or less are low risk (or PE unlikely)\nPatients scoring > 4 are high risk (or PE likely)",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "A concerned grandmother has brought her five-year-old grandson to the ED with a number of bruises. She says that she has noticed bruises over the past month which come and go, although the child seems completely well. Today he grazed his knee in a fall and she was worried that the bleeding did not stop as quickly as she would expect. What is the most likely explanation?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Viral-induced capillary fragility",
-      "B": "Immune (Idiopathic) thrombocytopenic purpura",
-      "C": "Non-accidental injury",
-      "D": "Acute leukaemia",
-      "E": "Henoch-Schonlein purpura"
-    },
-    "correct_answer": "B",
-    "category": "Pediatrics",
-    "explanation": "",
-    "image_url": null,
-    "explanation_image_url": null
-  },
-  {
-    "question_text": "A 74-year-old woman presents having suffered 4 ‘fainting episodes’ over the past 24 hours. Each episode was sudden and unexpected. Her examination is unremarkable. A copy of her rhythm strip is shown below: What is the SINGLE most likely diagnosis?",
-    "question_type": "radiogroup",
-    "choices": {
-      "A": "Wenckebach block",
-      "B": "Complete heart block",
-      "C": "Atrial fibrillation",
-      "D": "Sick sinus syndrome",
-      "E": "Mobitz type 2 AV block"
-    },
-    "correct_answer": "B",
-    "category": "Cardiology",
-    "explanation": "",
-    "image_url": "extracted_images/page_24.png",
     "explanation_image_url": null
   }
 ]

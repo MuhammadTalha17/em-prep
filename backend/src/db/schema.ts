@@ -10,7 +10,7 @@ import {
 export const questions = pgTable('questions', {
   id: uuid('id').primaryKey().defaultRandom(),
   questionText: text('question_text').notNull(),
-  questionType: varchar('question_type', { length: 50 }).notNull(),
+  questionType: varchar('question_type', { length: 50 }),
   choices: jsonb('choices').notNull(),
   correctAnswer: text('correct_answer').notNull(),
   category: varchar('category', { length: 100 }).notNull(),

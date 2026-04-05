@@ -565,28 +565,17 @@ def map_category(key: str) -> str:
 # Update test
 if __name__ == '__main__':
     import sys
+    sys.stdout.reconfigure(encoding='utf-8')
     
-    # Accept PDF path from command line argument
+    # Accept PDF path and optional output path from command line arguments
     pdf_path = sys.argv[1] if len(sys.argv) > 1 else "sample_questions.pdf"
+    output_path = sys.argv[2] if len(sys.argv) > 2 else "questions_output.json"
     
     pages = extract_pages(pdf_path)
         
     if pages:
         question_groups = group_question_pages(pages)
 
-        # Test page type detection on first 10 pages
-        # print("=== PAGE TYPE DETECTION ===")
-        # for i in range(min(10, len(pages))):
-        #     page_type = detect_page_type(pages[i])
-        #     text_preview = pages[i].extract_text()[:50].replace('\n', ' ')
-        #     print(f"Page {i+1}: {page_type:12} | {text_preview}...")
-
-        print("\n=== ALL PAGE TYPES ===")
-        for i in range(len(pages)):
-            page_type = detect_page_type(pages[i])
-            text_preview = pages[i].extract_text()[:50].replace('\n', ' ')
-            print(f"Page {i+1}: {page_type:12} | {text_preview}...")
-        
         # Extract all questions
         all_questions = []
         for idx, group in enumerate(question_groups):
@@ -594,19 +583,6 @@ if __name__ == '__main__':
             all_questions.append(q_data)
         
         print(f"Extracted {len(all_questions)} questions")
-
-        # Debug question 8
-        if len(all_questions) >= 8:
-            q8 = all_questions[7]  # 0-indexed
-            print(f"\n=== DEBUG QUESTION 8 ===")
-            print(f"Correct Answer: '{q8['CorrectAnswer']}'")
-            
-            # Find the answer page for Q8
-            group = question_groups[7]
-            print(f"Answer page: {group['answer_page']}")
-            if group['answer_page'] is not None:
-                answer_text = pages[group['answer_page']].extract_text()
-                print(f"Answer page text:\n{answer_text}")
         
         # Generate JSON (for backend import)
-        generate_json(all_questions)
+        generate_json(all_questions, output_path)

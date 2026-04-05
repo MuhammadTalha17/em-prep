@@ -3,13 +3,17 @@ import {
   IsNotEmpty,
   IsOptional,
   IsObject,
-  Matches,
 } from 'class-validator';
+import { IsValidCategory, IsCorrectAnswerInChoices, IsValidPlanLevel, VALID_CATEGORIES, VALID_PLAN_LEVELS } from './validators/question-validators';
 
 export class CreateQuestionDto {
   @IsString()
   @IsNotEmpty()
   questionText: string;
+
+  @IsString()
+  @IsNotEmpty()
+  questionType: string;
 
   @IsObject()
   @IsNotEmpty()
@@ -17,15 +21,17 @@ export class CreateQuestionDto {
 
   @IsString()
   @IsNotEmpty()
-  @Matches(/^[A-E]$/, { message: 'Correct answer must be A, B, C, D, or E' })
+  @IsCorrectAnswerInChoices({ message: 'correctAnswer must be a key in the choices object' })
   correctAnswer: string;
 
   @IsString()
   @IsNotEmpty()
+  @IsValidCategory({ message: `Category must be one of: ${VALID_CATEGORIES.join(', ')}` })
   category: string;
 
   @IsString()
   @IsNotEmpty()
+  @IsValidPlanLevel({ message: `planLevel must be "${VALID_PLAN_LEVELS[0]}" or "${VALID_PLAN_LEVELS[1]}"` })
   planLevel: string;
 
   @IsString()

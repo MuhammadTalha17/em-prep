@@ -50,16 +50,20 @@ export class QuestionsService {
     //1. save pdf temporarily:
     const tempDir = path.join(process.cwd(), 'temp');
     await fs.mkdir(tempDir, { recursive: true });
-    const pdfPath = path.join(tempDir, `${Date.now()}_${file.originalname}`);
+    const timestamp = Date.now();
+    const pdfPath = path.join(tempDir, `${timestamp}_${file.originalname}`);
     await fs.writeFile(pdfPath, file.buffer);
 
     //2. run pythonscript:
     // Define scriptPath outside try block so it's accessible in finally
     const scriptPath = path.join(
       process.cwd(),
-      'scripts', // Changed from '..'
+      'scripts',
       'pdf_to_excel.py',
     );
+
+    // Unique output JSON path per upload — avoids stale results from previous runs
+    const jsonPath = path.join(tempDir, `${timestamp}_questions_output.json`);
 
     try {
       // Check if script exists
@@ -69,8 +73,9 @@ export class QuestionsService {
         throw new Error(`Python script not found at: ${scriptPath}`);
       }
 
+      const pythonExe = path.join(process.cwd(), 'venv', 'Scripts', 'python.exe');
       const { stdout, stderr } = await execAsync(
-        `python "${scriptPath}" "${pdfPath}"`,
+        `"${pythonExe}" "${scriptPath}" "${pdfPath}" "${jsonPath}"`,
       );
 
       console.log('Python output:', stdout);
@@ -79,11 +84,6 @@ export class QuestionsService {
       }
 
       // 3. Read JSON output
-      const jsonPath = path.join(
-        path.dirname(scriptPath),
-        'questions_output.json',
-      );
-
       // Check if JSON file exists
       try {
         await fs.access(jsonPath);
@@ -153,8 +153,10 @@ export class QuestionsService {
       console.error('Error processing PDF:', error);
       throw new Error(`Failed to process PDF: ${error.message}`);
     } finally {
-      // 5. Cleanup temp PDF file
+      // 5. Cleanup temp PDF file and JSON output
       await fs.unlink(pdfPath).catch(() => {});
+      await fs.unlink(jsonPath).catch(() => {});
+
 
       // 6. Cleanup extracted images folder
       const extractedImagesDir = path.join(
