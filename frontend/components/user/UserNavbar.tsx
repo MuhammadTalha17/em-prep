@@ -29,11 +29,11 @@ export function UserNavbar() {
               href={item.href}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${
                 isActive
-                  ? "bg-linear-to-r from-red-50 to-red-100 text-red-700 shadow-sm border border-red-200"
-                  : "text-gray-600 hover:bg-red-50 hover:text-red-900"
+                  ? "bg-red-50 text-[#BA0C2F] shadow-sm border border-red-200"
+                  : "text-slate-600 hover:bg-slate-50 hover:text-slate-800"
               }`}
             >
-              <Icon size={20} />
+              <Icon size={20} color={isActive ? "#BA0C2F" : "#64748b"} />
               <span>{item.label}</span>
             </Link>
           );

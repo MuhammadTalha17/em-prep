@@ -13,29 +13,52 @@
 } */
 
 :root {
-  /* Background: Off-white/Light Gray for less eye strain than pure white */
-  --background: #f3f4f6; /* gray-100 */
-  --foreground: #111827; /* gray-900 */
-  
+  /* Primary accent: Deep crimson (#BA0C2F) */
+  --primary: #BA0C2F;
+  --primary-light: #FCE4E8;
+  --primary-dark: #7A081F;
+
+  /* Background: Off-white/Light Gray (#F8F9FA) */
+  --background: #F8F9FA;
+
+  /* Text: Dark slate instead of pure black */
+  --foreground: #1e293b;
+
+  /* Card: Pure white with light gray border */
   --card-bg: #ffffff;
-  --card-border: #e5e7eb; /* gray-200 */
-  
+  --card-border: #e2e8f0;
+
+  /* Sidebar: Pure white with light gray border */
   --sidebar-bg: #ffffff;
-  --sidebar-border: #e5e7eb;
+  --sidebar-border: #e2e8f0;
+
+  /* Text colors */
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-tertiary: #94a3b8;
 }
 
 :root[data-mantine-color-scheme="dark"] {
-  --background: #f3f4f6;
-  --foreground: #111827;
+  --background: #F8F9FA;
+  --foreground: #1e293b;
   --card-bg: #ffffff;
-  --card-border: #e5e7eb;
+  --card-border: #e2e8f0;
   --sidebar-bg: #ffffff;
-  --sidebar-border: #e5e7eb;
+  --sidebar-border: #e2e8f0;
 }
 
 @theme inline {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
